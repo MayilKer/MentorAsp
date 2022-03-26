@@ -1,0 +1,49 @@
+﻿@model CourseVM
+<main id="main" data-aos="fade-in">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <h2>Courses</h2>
+            <p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium. </p>
+        </div>
+    </div><!-- End Breadcrumbs -->
+    <!-- ======= Courses Section ======= -->
+    <section id="courses" class="courses">
+        <div class="container" data-aos="fade-up">
+
+            <div class="row" data-aos="zoom-in" data-aos-delay="100">
+                @foreach (Courses courses in Model.Courses)
+                {
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                        <div class="course-item">
+                            <img src="~/assets/img/@courses.Img" class="img-fluid" alt="...">
+                            <div class="course-content">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h4>@courses.Category.Name</h4>
+                                    <p class="price">$@courses.Price</p>
+                                </div>
+
+                                <h3><a asp-controller="Course" asp-action="Detail" asp-route-id="@courses.Id">@courses.Title</a></h3>
+                                <p>@courses.Content</p>
+                                <div class="trainer d-flex justify-content-between align-items-center">
+                                    <div class="trainer-profile d-flex align-items-center">
+                                        <img src="~/assets/img/trainers/@courses.Trainer.Img" class="img-fluid" alt="">
+                                        <span>@courses.Trainer.Name</span>
+                                    </div>
+                                    <div class="trainer-rank d-flex align-items-center">
+                                        <i class="bx bx-user"></i>&nbsp;50
+                                        &nbsp;&nbsp;
+                                        <i class="bx bx-heart"></i>&nbsp;65
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+
+        </div>
+    </section><!-- End Courses Section -->
+
+</main><!-- End #main -->
