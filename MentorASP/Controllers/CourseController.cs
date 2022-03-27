@@ -36,6 +36,7 @@ namespace MentorASP.Controllers
             {
                 Courses = await _contex.Courses.Where(c => c.Id == id).Include(ca => ca.Category).Include(t => t.Trainer).ToListAsync()
             };
+            if (courseVM == null) return BadRequest();
             return View(courseVM);
         }
     }
