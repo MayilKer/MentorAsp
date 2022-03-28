@@ -75,3 +75,4 @@ C:\Users\kerim\source\repos\MentorASP\MentorASP\bin\Debug\netcoreapp3.1\runtimes
 C:\Users\kerim\source\repos\MentorASP\MentorASP\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\kerim\source\repos\MentorASP\MentorASP\obj\Debug\netcoreapp3.1\Razor\Views\Trainer\Index.cshtml.g.cs
 C:\Users\kerim\source\repos\MentorASP\MentorASP\obj\Debug\netcoreapp3.1\Razor\Views\Course\Detail.cshtml.g.cs
+C:\Users\kerim\source\repos\MentorASP\MentorASP\obj\Debug\netcoreapp3.1\MentorASP.csproj.AssemblyReference.cache
